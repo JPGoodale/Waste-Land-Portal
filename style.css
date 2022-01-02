@@ -1,0 +1,1079 @@
+
+html::-webkit-scrollbar{
+  width: 13px;
+}
+
+html::-webkit-scrollbar-track{ 
+  background-color: #202324;
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: #454a4d;
+  border-radius: 10px;
+}
+
+body {
+  background-image: linear-gradient(to right, #322935 0%, #443c47 100%);
+  background-image: linear-gradient(to right, rgb(40, 33, 42) 0%, rgb(49, 53, 55) 100%);
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav {
+  display: none;
+}
+
+@media screen and (max-width: 1535px) {
+  nav{display:none;}
+  .nav {
+    background: linear-gradient(to left, rgb(53, 106, 123), rgb(126, 66, 58));
+    background-color: rgb(43, 47, 49);
+    height: 60px;
+    max-width: 100%;
+    display:block;
+  }
+  .nav .UL {
+    display:block;
+    margin-left: 0%;
+    transition: 0.5s;
+    border-bottom: 1px solid silver;
+    border-bottom-color: rgb(66, 71, 74);
+  }
+  .nav .UL:hover {
+    margin-left: 1%;
+  }
+
+  .nav .UL li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0px 20px;
+  }
+  .nav .UL li a {
+    color: rgb(255, 221, 169);
+    font-size: 23px;
+    font-family: 'Scheherazade New', serif;
+    cursor: pointer;
+  }
+
+}
+
+
+nav{
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  height: 25%;
+  width: 15%;
+  /* min-width: fit-content; */
+}
+
+nav:after{
+  content: "";
+  display: block;
+  margin-left: 10%;
+  width: 98%;
+  border-bottom: 1px solid silver;
+  border-bottom-color: rgb(66, 71, 74);
+  transition: 0.5s;
+}
+
+nav:hover:after{
+  margin-left: 0%;
+}
+
+.idk{
+  position: fixed;
+  /* top: 5px; */
+  left: 5px;
+  height: 24%;
+  width: 15%;
+  margin-top: 1.5%;
+  border-right: 1px solid silver;
+  border-right-color: rgb(66, 71, 74);
+  /* min-width: 200px;
+  min-height: 196px; */
+}
+
+.navlinks{
+  display: flexbox;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+#first-link{
+  margin-top: 2.5vh;
+}
+
+.navlinks li {
+  text-decoration: none;
+  font-size: 175%;
+  font-family: 'Scheherazade New', serif;
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  display: inline-block;
+  text-align: left;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu li {
+  display: block;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-shadow: 0 0 15px #272f55;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menu li:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+  bottom: 5%;
+}
+.menu li:hover::after {
+  width: 93%;
+  height: 1px;
+  background-color: #656770;
+  background-color: rgb(66, 71, 74);
+}
+
+#progress-bar{
+  --scrollAmount: 0%;
+  background: linear-gradient(to left, #6DACC0, #B97167);
+  background: linear-gradient(to left, rgb(53, 106, 123), rgb(126, 66, 58));
+  opacity: 0.7;
+  width: var(--scrollAmount);
+  height: 6px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+#coreContent-container{
+  background-image: linear-gradient(to right, #322935 0%, #403544 100%);
+  background-image: linear-gradient(to right, #322935 0%, #443c47 100%);
+  background-image: linear-gradient(to right, rgb(40, 33, 42) 0%, rgb(49, 53, 55) 100%);
+  /* border-left: 250px solid transparent; */
+  }
+
+h1{
+  color: blanchedalmond; 
+  color: rgb(255, 221, 169);
+  font-family: serif;
+  font-size: 300%;
+  text-align: center;
+  margin-top: 15vh;
+  }
+
+h2{
+  color: blanchedalmond; 
+  color: rgb(255, 221, 169);
+  font-family: serif;
+  font-size: 200%;
+  text-align: center;
+  margin-top: 10vh;
+  }
+
+pre{
+  font-size: large;
+  color: blanchedalmond;
+  color: rgb(255, 221, 169); 
+  font-family: serif;
+  margin-top: 5vh;
+}
+
+em{
+  font-size: x-large;
+  color: rgb(255, 221, 169);
+}
+
+.line-number{
+  float: right;
+  font-family: serif;
+  font-size: small;
+  margin-top: 7px;
+}
+
+.line-numberX{
+  float: right;
+  font-family: serif;
+  font-size: small;
+  margin-top: 20px;
+}
+
+.line-numberY{
+  float: right;
+  font-family: serif;
+  font-size: small;
+  margin-top: 30px;
+}
+
+.line-numberZ{
+  float: right;
+  font-family: serif;
+  font-size: small;
+  margin-top: 57px;
+}
+
+.line-numberJ{
+  float: right;
+  font-family: serif;
+  font-size: small;
+  margin-top: 80px;
+}
+
+.line-numberK{
+  float: right;
+  font-family: serif;
+  font-size: small;
+}
+
+
+
+
+#myButton0{
+  background: none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;;
+  text-align: center;
+  font-size: large; 
+}
+
+#myButton1{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large;  
+}
+
+#myButton2{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+}
+
+#myButton3{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+}
+
+#myButton4{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+}
+
+#myButton5{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+}
+
+#myButton6{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+}
+
+#myButton7{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+}
+
+#myButton8{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+}
+
+#myButton9{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+   display: inline-block; 
+}
+
+#myButton10{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton11{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton12{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton13{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton14{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton15{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton16{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton17{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton18{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton19{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton019{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton20{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton21{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton22{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton23{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton24{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton25{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton26{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton27{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton28{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton29{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton30{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton31{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton32{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton33{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton34{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton35{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton36{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton37{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton38{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton39{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton039{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton40{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton41{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton42{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton43{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton44{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton45{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton46{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton47{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton48{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton49{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton50{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton51{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton52{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton53{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton54{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton55{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton56{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton57{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton58{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton59{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton60{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton61{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton62{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton63{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton64{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton65{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton66{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton67{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton68{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+#myButton69{
+  background:none; 
+  border:none; 
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  cursor: pointer;
+  font-family: serif;
+  font-size: large; 
+  display: inline-block;
+}
+
+.tippy-box[data-theme~='mine'] {
+  color: blanchedalmond;
+  color: rgb(255, 221, 169);
+  background-color: #3f3434;
+  background-color: rgb(43, 47, 49);
+  border-radius: 10px;
+  font-size: medium  ;
+  font-family: serif;
+  animation: fadeIn linear 0.5s;
+  -webkit-animation: fadeIn linear 0.5s;
+  -moz-animation: fadeIn linear 0.5s;
+  -o-animation: fadeIn linear 0.5s;
+  -ms-animation: fadeIn linear 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+button{
+  color: rgb(255, 221, 169);
+  font-weight: bold;
+}
+
